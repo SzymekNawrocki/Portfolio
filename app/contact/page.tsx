@@ -1,15 +1,19 @@
 'use client'
 import { ReactElement, useState } from "react";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
+import PageTitle from '@/components/PageTitle'
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
 interface FormData {
   email: string;
+  subject: string;
   message: string;
 }
 
 export default function Page(): ReactElement {
   const [formData, setFormData] = useState<FormData>({
     email: "",
+    subject: "",
     message: "",
   });
 
@@ -25,10 +29,13 @@ export default function Page(): ReactElement {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Walidacja pól
+    
     const newErrors: { [key: string]: string } = {};
     if (!formData.email) {
       newErrors.email = "Email jest wymagany.";
+    }
+    if (!formData.subject) {
+      newErrors.subject = "Temat jest wymagany.";
     }
     if (!formData.message) {
       newErrors.message = "Wiadomość jest wymagana.";
@@ -42,17 +49,16 @@ export default function Page(): ReactElement {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen">
-      <div className="max-w-md mx-auto  rounded-lg shadow-md p-8 mb-8">
-        <h1 className="text-2xl font-semibold mb-4">Kontakt</h1>
-        <p className="text-sm text-gray-600 mb-4">
-        Skontaktować się ze mną możesz pod adresem e-mail szymonjakubnawrocki@gmail.com lub poprzez formularz
+    <div className="flex flex-col justify-center items-center min-h-screen pt-8 mt-7">
+      <PageTitle>Kontakt</PageTitle>
+      <div className=" max-w-md rounded-lg shadow-md bg-secondary p-4 max-md:ml-3 max-md:mr-3">
+        <p className="mb-4">
+          Skontaktować się ze mną możesz pod adresem e-mail szymonjakubnawrocki@gmail.com lub poprzez formularz
           kontaktowy.
         </p>
-       
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
-            <label htmlFor="email" className="block text-sm font-semibold text-gray-600">
+            <label htmlFor="email" className="mb-1 ml-1 block text-sm font-semibold">
               Email:
             </label>
             <input
@@ -62,14 +68,31 @@ export default function Page(): ReactElement {
               value={formData.email}
               onChange={handleChange}
               className={`w-full px-3 py-2 border rounded-md focus:outline-none ${
-                errors.email ? "border-red-500" : "border-gray-300"
+                errors.email ? "border-destructive" : "border-gray-300"
               }`}
               placeholder="Wprowadź swój adres email"
             />
-            {errors.email && <p className="text-red-500 mt-1">{errors.email}</p>}
+            {errors.email && <p className="text-destructive mt-1">{errors.email}</p>}
           </div>
           <div className="mb-6">
-            <label htmlFor="message" className="block text-sm font-semibold text-gray-600">
+            <label htmlFor="subject" className="mb-1 ml-1 block text-sm font-semibold ">
+              Temat:
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
+              className={`w-full px-3 py-2 border rounded-md focus:outline-none ${
+                errors.subject ? "border-destructive" : "border-gray-300"
+              }`}
+              placeholder="Wprowadź temat"
+            />
+            {errors.subject && <p className="text-destructive mt-1">{errors.subject}</p>}
+          </div>
+          <div className="mb-6">
+            <label htmlFor="message" className="mb-1 ml-1 block text-sm font-semibold">
               Wiadomość:
             </label>
             <textarea
@@ -78,35 +101,34 @@ export default function Page(): ReactElement {
               value={formData.message}
               onChange={handleChange}
               className={`w-full px-3 py-2 border rounded-md focus:outline-none ${
-                errors.message ? "border-red-500" : "border-gray-300"
+                errors.message ? "border-destructive" : "border-gray-300"
               }`}
               placeholder="Wpisz swoją wiadomość"
             />
-            {errors.message && <p className="text-red-500 mt-1">{errors.message}</p>}
+            {errors.message && <p className="text-red-500 mt-1 ml-1">{errors.message}</p>}
           </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
-          >
-            Wyślij
-          </button>
+          <HoverBorderGradient
+        containerClassName="rounded-full w-full"
+        className="dark:bg-black bg-white text-black dark:text-white w-full"
+      >
+        <span>Wyślij</span>
+      </HoverBorderGradient>
         </form>
       </div>
-      <hr className="w-1/4 border-t-2 border-gray-300 mb-8" />
-      <div className="mb-8 flex justify-center items-center space-x-4">
-        <a href="https://www.linkedin.com" className="text-blue-500 hover:text-blue-700">
+      <hr className="w-1/4 border-t-2 border-primary mb-8 mt-11 max-md:w-2/3"/>
+      <div className="mb-11 flex justify-center items-center space-x-4">
+        <a href="https://www.linkedin.com/in/szymon-nawrocki-660940204/" className="text-blue-500 hover:text-blue-700">
           <FaLinkedin size={32} />
         </a>
-        <a href="https://github.com" className="text-gray-800 hover:text-gray-600">
+        <a href="https://github.com/SzymekNawrocki" className="text-gray-800 hover:text-gray-600">
           <FaGithub size={32} />
         </a>
         <a href="https://www.instagram.com" className="text-pink-500 hover:text-pink-700">
           <FaInstagram size={32} />
         </a>
-        <a href="https://www.facebook.com" className="text-blue-700 hover:text-blue-900">
+        <a href="https://www.facebook.com/szymon.nawrocki.10/" className="text-blue-700 hover:text-blue-900">
           <FaFacebook size={32} />
         </a>
-     
       </div>
     </div>
   );

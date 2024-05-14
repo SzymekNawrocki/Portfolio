@@ -6,6 +6,8 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import { useRouter } from 'next/router';
 
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -29,8 +31,8 @@ export default function RootLayout({
           >
             
             {children}
-          </ThemeProvider>
           <Navbar/>
+          </ThemeProvider>
           </body>
             <Footer/>
     </html>
