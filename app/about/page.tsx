@@ -8,15 +8,13 @@ export default function page() {
   return (
     <div className="max-w-2xl mx-auto pt-8 mt-8 mb-12">
     <PageTitle>O mnie</PageTitle>
-      
       {Content.map((item, index) => (
         <motion.div
           key={`content-${index}`}
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: index * 0.1, duration: 0.5 }}
-          className="mb-20 bg-secondary shadow-md p-6 rounded-lg dark:bg-card-dark max-md:ml-4 max-md:mr-4"
-        >
+          className="mb-20 bg-secondary shadow-md p-6 rounded-lg dark:bg-card-dark max-md:ml-4 max-md:mr-4">
           <div className="text-center ">
             <h2 className="bg-primary text-primary-foreground rounded-full text-lg px-6 py-3 mb-4 inline-block">
               {item.badge}
@@ -28,8 +26,8 @@ export default function page() {
                 <Image
                   src={item.image}
                   alt="blog thumbnail"
-                  width={640} // Przykładowa szerokość
-                  height={426} // Przykładowa wysokość
+                  width={640} 
+                  height={426} 
                   className="absolute inset-0 w-full h-full object-cover rounded-md"
                 />
               </div>
@@ -41,9 +39,6 @@ export default function page() {
     </div>
   );
 }
-
-
-
 
 const Content = [
   {

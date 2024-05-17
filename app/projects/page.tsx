@@ -4,7 +4,6 @@ import PageTitle from "@/components/PageTitle";
 import Link from "next/link"
 import Image from "next/image"
 
-
 interface IProjectsModel {
   title: string;
   image: {
@@ -54,6 +53,5 @@ export default async function ProjectsModelsPage() {
       ))}
     </div>
 </div>
-
   );
 }
