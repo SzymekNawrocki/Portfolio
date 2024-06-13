@@ -1,57 +1,66 @@
 import { gql } from "graphql-request";
 import { gqlClient } from "@/lib/gqlClient";
 import PageTitle from "@/components/PageTitle";
-import Link from "next/link"
-import Image from "next/image"
+import Image from "next/image";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 interface IProjectsModel {
   title: string;
   image: {
     url: string;
-  }
+  };
   description: string;
-  links:string;
+  gitlink: string;
+  sitelink: string;
 }
 
 export default async function ProjectsModelsPage() {
   const query = gql`
-    { 
+    {
       allProjectsModels {
         title
         image {
           url
-        } 
+        }
         description
-        links
-      }	
+        gitlink
+        sitelink
+      }
     }
   `;
-  
+
   const { allProjectsModels }: { allProjectsModels: IProjectsModel[] } = await gqlClient.request(query);
 
   return (
-    <div className="min-h-screen max-w-3xl mx-auto pt-8 mt-8 mb-12 bg-background text-foreground dark:text-foreground-dark ">
-    <PageTitle>Projekty</PageTitle>
-    <div className="grid grid-cols-1 gap-20 mt-20 md:mx-4 lg:mx-8 "> 
-      {allProjectsModels.map((project: IProjectsModel, index: number) => (
-        <Link key={index} href={project.links}>
-          <div className="relative flex flex-col items-center md:flex-row cursor-pointer mb-8 md:mb-0 md:w-full md:mx-auto md:max-w-3xl max-md:ml-4 max-md:mr-4 ">
-            <h2 className="text-xl text-primary font-semibold mb-4 md:ml-5 md:mt-2 md:w-1/3 ">{project.title}</h2>
-            <p className="mb-4 md:mb-0 md:w-3/4 max-md:text-center">{project.description}</p>
-            <div className="relative max-md:mb-2 ">
+    <div className="container mx-auto py-4 bg-background mt-11">
+      <PageTitle> Projekty </PageTitle>
+      <div className="space-y-8">
+        {allProjectsModels.map((project, index) => (
+          <div key={index} className="p-3 border border-border rounded-lg bg-card">
+            <div className="flex items-center space-x-4">
               <Image
                 src={project.image.url}
                 alt={project.title}
-                height={300}
-                width={180}
-                className="rounded-md"
+                width={300}
+                height={100}
+                className=" ml-4 h-50 object-cover rounded-lg mt-11 "
               />
+              <div>
+                <h2 className="text-2xl font-bold text-primary mr-4 ml-4">{project.title}</h2>
+                <p className="text-muted-foreground mt-4 mr-4 ml-4 ">{project.description}</p>
+              </div>
             </div>
-            <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 bg-white bg-opacity-10 rounded-md"></div>
+            <div className="m-4 flex space-x-4 justify-end ">
+              <a href={project.gitlink} className="text-primary hover:text-primary-foreground">
+                <FaGithub size={24} />
+              </a>
+              <a href={project.sitelink} className="text-primary hover:text-primary-foreground">
+                <FaExternalLinkAlt size={24} />
+              </a>
+            </div>
           </div>
-        </Link>
-      ))}
+        ))}
+      </div>
     </div>
-</div>
   );
 }
