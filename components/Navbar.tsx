@@ -8,14 +8,13 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { IconHome, IconMessage, IconUser, IconPackage, IconSun, IconMoon } from "@tabler/icons-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { useTheme } from "next-themes";
+import { IconHome, IconMessage, IconUser, IconPackage } from "@tabler/icons-react";
 import { ModeToggle } from '@/components/ModeToggle';
 
 const Navbar = ({ className }: { className?: string }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true);
+  const [activeLink, setActiveLink] = useState("Home"); // Default active link
 
   useMotionValueEvent(scrollYProgress, "change", () => {
     const current = scrollYProgress.get();
@@ -46,19 +45,22 @@ const Navbar = ({ className }: { className?: string }) => {
             "flex max-w-xl top-3 fixed inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl- py-2 items-center justify-between"
           )}
         >
-          <div className="ml-6">
-            <Avatar>
-              <AvatarImage src="https://github.com/shadcn.png" alt="Nawrocki.dev logo" />
-              <AvatarFallback>SN</AvatarFallback>
-            </Avatar>
+          <div className="ml-5">
+            <Link href="/" className="font-bold relative text-black dark:text-white underline decoration-primary decoration-2">
+              Nawrocki.dev
+            </Link>
           </div>
           <div className="flex space-x-4">
             {navItems.map((navItem, idx) => (
               <Link
                 key={`link-${idx}`}
                 href={navItem.link}
+                onClick={() => setActiveLink(navItem.name)} // Update active link on click
                 className={cn(
-                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+                  "relative items-center flex space-x-1",
+                  activeLink === navItem.name
+                    ? "text-orange-500 dark:text-orange-500" // Active link style
+                    : "text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300" // Inactive link style
                 )}
               >
                 <span className="block sm:hidden">{navItem.icon}</span>

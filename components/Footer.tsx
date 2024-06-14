@@ -6,10 +6,10 @@ export default function Footer() {
         <div className="mt-11 bg-border py-8">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center h-full">
           <div className="text-center md:text-left mb-4 md:mb-0 md:flex-grow">
-            <p>&copy; {new Date().getFullYear()} Szymon Nawrocki. Wszelkie prawa zastrzeżone.</p>
+            <p>&copy; {new Date().getFullYear()} <span className='font-bold'>szymonnawrocki.dev</span> Wszelkie prawa zastrzeżone.</p>
           </div>
           <div className="flex justify-center md:justify-end md:flex-grow space-x-4">
-            <p><Link href="/polityka-prywatnosci">Polityka prywatności</Link></p>
+            <p><Link href="/privacy-policy">Polityka prywatności</Link></p>
           </div>
         </div>
       </div>

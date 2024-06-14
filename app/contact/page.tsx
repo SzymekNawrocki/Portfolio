@@ -20,10 +20,10 @@ export default function ContactPage() {
             Masz pytanie, ofertę współpracy? Skorzystaj z&nbsp;formularza
             kontaktowego lub&nbsp;napisz bezpośrednio na{" "}
             <a
-              href="mailto:szymonjakubnawrocki@gmail.com"
+              href="mailto:kontakt@szymonnawrocki.dev"
               className="font-semibold text-primary hover:underline"
             >
-              szymonjakubnawrocki@gmail.com
+              kontakt@szymonnawrocki.dev
             </a>
           </p>
         </div>

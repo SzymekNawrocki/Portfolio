@@ -77,10 +77,10 @@ export const DirectionAwareHover = ({
           whileHover={direction}
           exit="exit"
         >
-          <motion.div className="group-hover/card:block hidden absolute inset-0 w-full h-full bg-black/40 z-10 transition duration-500" />
+          <motion.div className="group-hover/card:block hidden absolute inset-0 w-full h-full bg-[#EA580C]/40 z-10 transition duration-500" />
           <motion.div
             variants={variants}
-            className="h-full w-full relative bg-primary dark:bg-dark-popover" // Zmieniamy kolor tła na odpowiedni zdefiniowany w globals.css
+            className="h-full w-full relative"
             transition={{
               duration: 0.2,
               ease: "easeOut",
@@ -116,15 +116,10 @@ export const DirectionAwareHover = ({
   );
 };
 
-
-
-
-
 const variants = {
   initial: {
     x: 0,
   },
-
   exit: {
     x: 0,
     y: 0,

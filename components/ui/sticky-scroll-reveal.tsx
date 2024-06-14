@@ -68,8 +68,9 @@ export const StickyScroll = ({
                 }}
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
+                  color: activeCard === index ? "var(--orange-500)" : "var(--slate-100)",
                 }}
-                className="text-2xl font-bold text-slate-100"
+                className="text-2xl font-bold"
               >
                 {item.title}
               </motion.h2>
@@ -79,8 +80,9 @@ export const StickyScroll = ({
                 }}
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
+                  color: activeCard === index ? "var(--orange-500)" : "var(--slate-300)",
                 }}
-                className="text-kg text-slate-300 max-w-sm mt-10"
+                className="text-lg max-w-sm mt-10"
               >
                 {item.description}
               </motion.p>
