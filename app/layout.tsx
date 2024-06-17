@@ -4,7 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
-import { useRouter } from 'next/router';
+
 
 
 
@@ -30,10 +30,10 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             
-            {children}
-          <Navbar/>
-          </ThemeProvider>
-            <Footer/>
+                        {children}
+                      <Navbar/>
+                </ThemeProvider>
+              <Footer/>
           </body>
     </html>
   );

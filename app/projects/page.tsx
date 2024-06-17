@@ -50,7 +50,7 @@ export default async function ProjectsModelsPage() {
                 <p className="text-muted-foreground mt-4 mr-4 ml-4 ">{project.description}</p>
               </div>
             </div>
-            <div className="m-4 flex space-x-4 justify-end ">
+            <div className="m-ta4 flex space-x-4 justify-end ">
               <a href={project.gitlink} className="text-primary hover:text-primary-foreground">
                 <FaGithub size={24} />
               </a>

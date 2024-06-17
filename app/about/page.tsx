@@ -10,7 +10,7 @@ const Content = [
       <>
         Swoją przygodę z programowaniem rozpocząłem od serii kursów tworzenia stron internetowych MMC School. Nauczyłem się wtedy 
         HTML, CSS i podstaw JavaScript. Poznałem również ważne koncepcje jak Responsive Web Design, stylowanie stron przy pomocy SCSS oraz BEM i dobre 
-        praktyki pisania kodu. W międzyczasie próbowałem swoich sił w C++, Pythonie. Potrafię również dobrze poruszać się po terminalu. Moim głównym celem jest poznanie biblioteki React. Obecnie najczęściej tworzę swoje projekty używając Next.js i rozwijam swoją wiedzę w tym zakresie. Następny 
+        praktyki pisania kodu. W międzyczasie próbowałem swoich sił w C++, Pythonie. Potrafię również dobrze poruszać się po terminalu. Moim głównym celem jest rozwój w kierunku Reacta. Obecnie najczęściej tworzę swoje projekty używając Next.js i rozwijam swoją wiedzę w tym zakresie. Następny 
         przystanek po opanowaniu Reacta, chciałbym poznać backendowy język Nest.js
       </>
     ),
