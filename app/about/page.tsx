@@ -46,33 +46,34 @@ const Content = [
 export default function Page() {
   return (
     <div className="max-w-2xl mx-auto pt-8 mt-8 mb-12">
-      <PageTitle>O mnie</PageTitle>
-      {Content.map((item, index) => (
-        <div
-          key={`content-${index}`}
-          className="mb-20 bg-secondary shadow-md p-6 rounded-lg dark:bg-card-dark max-md:ml-4 max-md:mr-4"
-        >
-          <div className="text-center">
-            <h2 className="bg-primary text-primary-foreground rounded-full text-lg px-6 py-3 mb-4 inline-block">
-              {item.badge}
-            </h2>
+  <PageTitle>O mnie</PageTitle>
+  {Content.map((item, index) => (
+    <div
+      key={`content-${index}`}
+      className="mb-20 bg-secondary shadow-md p-6 rounded-lg dark:bg-card-dark max-md:ml-4 max-md:mr-4"
+    >
+      <div className="text-center">
+        <h2 className="bg-primary text-primary-foreground rounded-full text-lg px-6 py-3 mb-4 inline-block">
+          {item.badge}
+        </h2>
+      </div>
+      <div className="text-sm">
+        {item?.image && (
+          <div className="relative h-80 max-md:h-80 overflow-hidden mb-6">
+            <Image
+              src={item.image}
+              alt="blog thumbnail"
+              width={640}
+              height={426}
+              className="absolute inset-0 w-full h-full object-cover rounded-md"
+            />
           </div>
-          <div className="text-sm">
-            {item?.image && (
-              <div className="relative h-80 max-md:h-80 overflow-hidden mb-6">
-                <Image
-                  src={item.image}
-                  alt="blog thumbnail"
-                  width={640}
-                  height={426}
-                  className="absolute inset-0 w-full h-full object-cover rounded-md"
-                />
-              </div>
-            )}
-            <p className="text-center mb-4">{item.description}</p>
-          </div>
-        </div>
-      ))}
+        )}
+        <p className="text-justify mb-4">{item.description}</p>
+      </div>
     </div>
+  ))}
+</div>
+
   );
 }
