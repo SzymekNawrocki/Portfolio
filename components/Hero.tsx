@@ -27,7 +27,7 @@ export default function Page() {
         </div>
       </div>
       <div className='justify-center flex gap-11'>
-      <Link href="/Nawrockicvportfolio.pdf" target='_blank' passHref>
+      <Link href="/cvszymonnawrocki.pdf" target='_blank' passHref>
         <HoverBorderGradient>
           <span>Pobierz CV</span>
         </HoverBorderGradient>
