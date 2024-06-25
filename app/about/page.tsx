@@ -49,8 +49,7 @@ export default function Page() {
   {Content.map((item, index) => (
     <div
       key={`content-${index}`}
-      className="mb-20 bg-secondary shadow-md p-6 rounded-lg dark:bg-card-dark max-md:ml-4 max-md:mr-4"
-    >
+      className="mb-20 bg-secondary shadow-md p-6 rounded-lg dark:bg-card-dark max-md:ml-4 max-md:mr-4">
       <div className="text-center">
         <h2 className="bg-primary text-primary-foreground rounded-full text-lg px-6 py-3 mb-4 inline-block">
           {item.badge}
