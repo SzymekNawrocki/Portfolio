@@ -1,5 +1,4 @@
 "use client";
-import { motion } from 'framer-motion';
 import React from "react";
 import Image from "next/image";
 import PageTitle from "@/components/PageTitle";
@@ -74,6 +73,5 @@ export default function Page() {
     </div>
   ))}
 </div>
-
   );
 }

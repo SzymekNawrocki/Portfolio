@@ -1,5 +1,4 @@
 import { clsx } from "clsx";
-
 export type AlertType = "loading" | "success" | "error";
 
 interface Props {
