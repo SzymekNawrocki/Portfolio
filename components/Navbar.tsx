@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { IconHome, IconMessage, IconUser, IconPackage } from "@tabler/icons-react";
 import { ModeToggle } from '@/components/ModeToggle';
+import Image from 'next/image'
 
 const Navbar = ({ className }: { className?: string }) => {
   const { scrollYProgress } = useScroll();
@@ -47,7 +48,13 @@ const Navbar = ({ className }: { className?: string }) => {
         >
           <div className="ml-5">
             <Link href="/" className="font-bold relative text-black dark:text-white underline decoration-primary decoration-2">
-              Nawrocki.dev
+            <Image
+        src="/1.png" // Ścieżka do Twojego obrazka w folderze public
+        alt="Opis obrazka"
+        width={60} // Szerokość obrazka
+        height={50} // Wysokość obrazka
+        className="ml-11 rounded-full"
+      />
             </Link>
           </div>
           <div className="flex space-x-4">
