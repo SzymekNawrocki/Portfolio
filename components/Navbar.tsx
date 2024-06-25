@@ -49,11 +49,11 @@ const Navbar = ({ className }: { className?: string }) => {
           <div className="ml-5">
             <Link href="/" className="font-bold relative text-black dark:text-white underline decoration-primary decoration-2">
             <Image
-        src="/1.png" // Ścieżka do Twojego obrazka w folderze public
+        src="/1.png" 
         alt="Opis obrazka"
-        width={60} // Szerokość obrazka
-        height={50} // Wysokość obrazka
-        className="ml-11 rounded-full"
+        width={60} 
+        height={50} 
+        className="ml-4 rounded-full"
       />
             </Link>
           </div>
@@ -62,12 +62,12 @@ const Navbar = ({ className }: { className?: string }) => {
               <Link
                 key={`link-${idx}`}
                 href={navItem.link}
-                onClick={() => setActiveLink(navItem.name)} // Update active link on click
+                onClick={() => setActiveLink(navItem.name)} // 
                 className={cn(
                   "relative items-center flex space-x-1",
                   activeLink === navItem.name
-                    ? "text-orange-500 dark:text-orange-500" // Active link style
-                    : "text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300" // Inactive link style
+                    ? "text-orange-500 dark:text-orange-500" // 
+                    : "text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300"
                 )}
               >
                 <span className="block sm:hidden">{navItem.icon}</span>
