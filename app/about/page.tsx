@@ -63,8 +63,7 @@ export default function Page() {
               alt="blog thumbnail"
               width={640}
               height={426}
-              className="absolute inset-0 w-full h-full object-cover rounded-md"
-            />
+              className="absolute inset-0 w-full h-full object-cover rounded-md"/>
           </div>
         )}
         <p className="text-justify mb-4">{item.description}</p>
