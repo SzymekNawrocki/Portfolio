@@ -7,22 +7,17 @@ const Content = [
   {
     description: (
       <>
-        Swoją przygodę z programowaniem rozpocząłem od serii kursów tworzenia stron internetowych MMC School. Nauczyłem się wtedy 
-        HTML, CSS i podstaw JavaScript. Poznałem również ważne koncepcje jak Responsive Web Design, stylowanie stron przy pomocy SCSS oraz BEM i dobre 
-        praktyki pisania kodu. W międzyczasie próbowałem swoich sił w C++, Pythonie. Potrafię również dobrze poruszać się po terminalu. Moim głównym celem jest rozwój w kierunku Reacta. Obecnie najczęściej tworzę swoje projekty używając Next.js i rozwijam swoją wiedzę w tym zakresie. Następny 
-        przystanek po opanowaniu Reacta, chciałbym poznać backendowy język Nest.js
+        Swoją przygodę z programowaniem rozpocząłem od serii kursów tworzenia stron internetowych MMC School. Nauczyłem się wtedy języka HTML, CSS oraz JavaScript. Po roku samodzielnej nauki zapisałem się na niestacjonarne studia online na kierunku Informatyka. W dalszym etapie rozwoju zacząłem tworzyć swoje projekty głównie w technologii Next.js. Na dzień dzisiejszy pracuję nad rozwojem swoich aktualnych projektów oraz rozwijaniem kompetencji w kierunku tworzenia aplikacji mobilnych (React Native), natomiast na obecnym semestrze będę miał okazję uczyć się tworzenia backendu przy pomocy platformy .NET. 
       </>
     ),
     badge: "Programowanie",
     image:
-      "https://cdn.pixabay.com/photo/2015/12/09/15/51/code-1084923_960_720.png",
+      "https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png",
   },
   {
     description: (
       <>
-        Od początku szkoły średniej moim głównym zainteresowaniem są mieszane sztuki walki. Jestem fanem federacji UFC i sam chciałbym 
-        sprawdzić się jeszcze na zawodach, na poziomie amatorskim lub zawodowym. Jedna wspólna cecha sztuk walki i programowania to 
-        bezustanny rozwój a druga to nagradzanie kreatywności i dyscypliny co skłoniło mnie do podjęcia nauki. 
+        Od początku szkoły średniej moim głównym zainteresowaniem są mieszane sztuki walki. Jestem fanem federacji UFC i sam chciałbym sprawdzić się jeszcze na zawodach, na poziomie amatorskim lub zawodowym. Widzę dużo podobieństw w nauce sztuk walki oraz programowania, a moim marzeniem jest połączenie tych dwóch dziedzin ze sobą w mojej codziennej rutynie.
       </>
     ),
     badge: "Sztuki walki",
@@ -32,8 +27,8 @@ const Content = [
   {
     description: (
       <>
-        Moje zainteresowania są dość różnorodne i obejmują wiele obszarów życia. Interesuję się rynkiem finansowym, ponieważ lubię śledzić dynamikę biznesu oraz globalną polityką, ponieważ uważam, że ważne jest rozumienie wydarzeń na świecie. W literaturze przyciągają mnie książki fantasy, historyczne oraz te, które oferują inspirujące perspektywy rozwoju osobistego - ostatnio zafascynowałem się Musashim Miyamoto.
-        Jestem również fanem sportu, zwłaszcza piłki nożnej, która dostarcza mi wielu emocji i radości. Gry komputerowe, które lubię najbardziej, to bijatyki, strzelanki oraz te z otwartymi światami, szczególnie te fantastyczne, gdzie mogę eksplorować nowe środowiska i podejmować nowe wyzwania.
+      Interesuję się rynkiem finansowym, ponieważ lubię śledzić dynamikę biznesu oraz globalną polityką, ponieważ uważam, że ważne jest rozumienie wydarzeń na świecie. W literaturze przyciągają mnie książki fantasy, historyczne oraz te, które oferują inspirujące perspektywy rozwoju osobistego - ostatnio zafascynowałem się Musashim Miyamoto.
+        Jestem również fanem sportu, zwłaszcza piłki nożnej. Gry komputerowe, które lubię najbardziej, to bijatyki, strzelanki oraz te z otwartymi światami, szczególnie te fantastyczne, gdzie mogę eksplorować nowe środowiska i podejmować nowe wyzwania.
       </>
     ),
     badge: "Pozostałe",

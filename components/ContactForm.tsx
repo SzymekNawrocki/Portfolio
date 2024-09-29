@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 import { useForm, FormProvider } from "react-hook-form";
@@ -32,11 +33,11 @@ const messages = {
 
 const isEmailAllowed = (email: string) => {
   const notAllowedDomains = JSON.parse(
-    process.env.NEXT_PUBLIC_NOT_ALLOWED_EMAIL_DOMAINS as string,
+    process.env.NEXT_PUBLIC_NOT_ALLOWED_EMAIL_DOMAINS as string
   );
 
   return !notAllowedDomains.some((domain: string) =>
-    email.endsWith(`@${domain}`),
+    email.endsWith(`@${domain}`)
   );
 };
 
@@ -77,7 +78,7 @@ export function ContactForm() {
   const sendMessage = async (data: Iform) => {
     setAlertVisible(true);
     setAlertType("loading");
-    setAlertTitle("Wysyłanie wiadmości...");
+    setAlertTitle("Wysyłanie wiadomości...");
     setAlertInfo("");
 
     const emailResponse = await fetch("/api/email", {
@@ -112,7 +113,7 @@ export function ContactForm() {
         info={alertInfo}
       />
       <FormProvider {...form}>
-        <form className="w-full" onSubmit={form.handleSubmit(sendMessage)}>
+        <form className="mt-8 w-full space-y-6" onSubmit={form.handleSubmit(sendMessage)}>
           <FormField
             type="email"
             id="email"
@@ -126,7 +127,6 @@ export function ContactForm() {
             label="Wiadomość"
             required={true}
           />
-
           <FormField
             type="checkbox"
             id="privatePolicy"

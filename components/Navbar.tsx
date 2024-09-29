@@ -15,7 +15,7 @@ import Image from 'next/image'
 const Navbar = ({ className }: { className?: string }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true);
-  const [activeLink, setActiveLink] = useState("Home"); // Default active link
+  const [activeLink, setActiveLink] = useState("Home"); 
 
   useMotionValueEvent(scrollYProgress, "change", () => {
     const current = scrollYProgress.get();
@@ -28,10 +28,10 @@ const Navbar = ({ className }: { className?: string }) => {
   });
 
   const navItems = [
-    { name: "Home", link: "/", icon: <IconHome className="h-6 w-6 text-neutral-500 dark:text-white" /> },
-    { name: "O mnie", link: "/about", icon: <IconUser className="h-6 w-6 text-neutral-500 dark:text-white" /> },
-    { name: "Projekty", link: "/projects", icon: <IconPackage className="h-6 w-6 text-neutral-500 dark:text-white" /> },
-    { name: "Kontakt", link: "/contact", icon: <IconMessage className="h-6 w-6 text-neutral-500 dark:text-white" /> },
+    { name: "Home", link: "/", icon: <IconHome className="h-7 w-7 text-black dark:text-white" /> },
+    { name: "O mnie", link: "/about", icon: <IconUser className="h-7 w-7 text-black dark:text-white" /> },
+    { name: "Projekty", link: "/projects", icon: <IconPackage className="h-7 w-7 text-black dark:text-white" /> },
+    { name: "Kontakt", link: "/contact", icon: <IconMessage className="h-7 w-7 text-black dark:text-white" /> },
   ];
 
   return (
@@ -57,7 +57,7 @@ const Navbar = ({ className }: { className?: string }) => {
       />
             </Link>
           </div>
-          <div className="flex space-x-4">
+          <div className="flex space-x-6">
             {navItems.map((navItem, idx) => (
               <Link
                 key={`link-${idx}`}
@@ -66,7 +66,7 @@ const Navbar = ({ className }: { className?: string }) => {
                 className={cn(
                   "relative items-center flex space-x-1",
                   activeLink === navItem.name
-                    ? "text-orange-500 dark:text-orange-500" // 
+                    ? "text-primary dark:text-primary" // 
                     : "text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300"
                 )}
               >

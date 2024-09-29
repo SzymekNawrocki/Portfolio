@@ -32,33 +32,33 @@ export default async function ProjectsModelsPage() {
   const { allProjectsModels }: { allProjectsModels: IProjectsModel[] } = await gqlClient.request(query);
 
   return (
-    <div className="container mx-auto py-4 bg-background mt-11">
+    <div className="container mx-auto py-11 mt-11">
   <PageTitle> Projekty </PageTitle>
-  <div className="space-y-8">
+  <div className="space-y-20">
     {allProjectsModels.map((project, index) => (
-      <div key={index} className="p-3 border border-border rounded-lg bg-card">
-        <div className="flex flex-col md:flex-row md:items-start md:space-x-4">
-          <div className=" mt-2 md:mt-6 md:order-1">
+      <div key={index} className="p-8 border-border rounded-lg bg-secondary">
+        <div className="flex flex-col items-center">
+          <div className="md:mt-4">
+            <h2 className="text-2xl font-bold text-primary text-center">{project.title}</h2>
+            <p className="text-foreground mt-4 text-center">{project.description}</p>
+          </div>
+          <div className="mt-9">
             <Image
               src={project.image.url}
               alt={project.title}
               width={300}
               height={100}
-              className="md:w-auto h-50 object-cover rounded-lg hidden md:block"
+              className="w-full h-50 object-cover rounded-lg"
             />
           </div>
-          <div className="order-1 md:flex-1 md:mt-6">
-            <h2 className="text-2xl font-bold text-primary mt-2 md:ml-4">{project.title}</h2>
-            <p className="text-muted-foreground mt-2 md:ml-4">{project.description}</p>
+          <div className="flex space-x-4 justify-center mt-9">
+            <a href={project.gitlink} className="text-primary hover:text-primary-foreground" target="_blank">
+              <FaGithub size={24} />
+            </a>
+            <a href={project.sitelink} className="text-primary hover:text-primary-foreground" target="_blank">
+              <FaExternalLinkAlt size={24} />
+            </a>
           </div>
-        </div>
-        <div className="order-4 md:order-none flex space-x-4 justify-center md:justify-end mt-4">
-          <a href={project.gitlink} className="text-primary hover:text-primary-foreground" target="_blank">
-            <FaGithub size={24} />
-          </a>
-          <a href={project.sitelink} className="text-primary hover:text-primary-foreground" target="_blank">
-            <FaExternalLinkAlt size={24} />
-          </a>
         </div>
       </div>
     ))}

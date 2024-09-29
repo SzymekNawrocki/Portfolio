@@ -9,7 +9,7 @@ export default function Page() {
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
           <div className="w-full max-w-sm md:max-w-full mx-auto rounded-md overflow-hidden">
             <Image
-              src="/szymon-nawrocki.jpg"
+              src="/cyberpunk.png"
               alt="Description of the image"
               className="w-full h-auto rounded-md"
               width={300}
@@ -22,21 +22,16 @@ export default function Page() {
             Cześć! Nazywam się <span className='text-primary'>Szymon Nawrocki</span>.
           </h1>
           <p className="text-neutral-500 max-w-lg mx-auto md:mx-0 my-2 text-sm md:text-base text-center md:text-left">
-            Swoją przygodę z programowaniem zacząłem w październiku 2022 roku. Jestem studentem informatyki, a mój obecny kierunek rozwoju w IT to <span className='text-primary'>Web Development</span>.
+            Swoją przygodę z programowaniem zacząłem w październiku 2022 roku. Jestem studentem drugiego roku informatyki a mój kierunek rozwoju <span className='text-primary'>Full Stack Development</span>.
           </p>
         </div>
       </div>
       <div className='justify-center flex gap-11'>
-      <Link href="/cvszymonnawrocki.pdf" target='_blank' passHref>
+      <Link href="/szymonnawrocki.cv.pdf" target='_blank' passHref>
         <HoverBorderGradient>
           <span>Pobierz CV</span>
         </HoverBorderGradient>
         </Link>
-        <Link href="/contact">
-        <HoverBorderGradient>
-          Skontaktuj się
-        </HoverBorderGradient>
-      </Link>
    </div>
    </div>
   );
