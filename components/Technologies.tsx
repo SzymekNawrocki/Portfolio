@@ -42,7 +42,7 @@ export default function Technologies() {
       icon: <AiOutlineRobot className="text-blue-400 w-12 h-12" />,
       title: 'AI',
       description:
-        'I am really into AI and use it in my daily work. The idea of using AI to improve tasks is something I find exciting.',
+        'Przy swoich projektach często korzystam z Chat GPT oraz generetora zdjęć Canva.',
     },
     JavaScript: {
       icon: <FaJsSquare className="text-yellow-500 w-12 h-12" />,

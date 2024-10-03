@@ -10,7 +10,8 @@ export default function FloatingDockDemo() {
       icon: (
         <FaGithub className="h-full w-full text-violet-700" />
       ),
-      href: "#",
+      href: "https://github.com/SzymekNawrocki",
+      
     },
 
     {
@@ -18,21 +19,21 @@ export default function FloatingDockDemo() {
       icon: (
         <FaFacebook className="h-full w-full text-blue-500" />
       ),
-      href: "#",
+      href: "https://www.facebook.com/szymon.nawrocki.10/",
     },
     {
       title: "LinkedIn",
       icon: (
         <FaLinkedin className="h-full w-full text-[#0A66C2]" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/in/szymon-nawrocki-660940204/",
     },
     {
       title: "Instagram",
       icon: (
       <FaInstagram className="h-full w-full text-[#BF1F35]" />
       ),
-      href: "#",
+      href: "https://www.instagram.com/szymeknawrocki/",
     }
    
   ];

@@ -18,7 +18,7 @@ export default function TechDetail({ icon, title, description, onClose }: TechDe
         <div className="flex flex-col items-center">
           <div className="text-4xl mb-4">{icon}</div>
           <h2 className="text-2xl font-bold mb-4">{title}</h2>
-          <p className="text-foreground text-center">{description}</p>
+          <p className="text-foreground text-justify">{description}</p>
         </div>
       </div>
     </div>
