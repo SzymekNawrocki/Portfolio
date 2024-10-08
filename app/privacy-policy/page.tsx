@@ -3,36 +3,36 @@ import PageTitle from "@/components/PageTitle";
 export default function PrivacyPolicy() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 mt-11">
-      <PageTitle>Polityka Prywatności</PageTitle>
+      <PageTitle>Privacy Policy</PageTitle>
       <div className="mt-6">
-          <h2 className="text-xl font-bold mb-2">Administrator danych</h2>
+          <h2 className="text-xl font-bold mb-2">Data administrator</h2>
             <p className="text-lg leading-relaxed mb-4">
-            Administratorem danych jest osoba fizyczna Szymon Nawrocki -{" "}
+            The data administrator is the individual person Szymon Nawrocki -{" "}
               <a href="mailto:kontakt@szymonnawrocki.dev">kontakt@szymonnawrocki.dev</a>
             </p>
-          <h2 className="text-xl font-bold mb-2">Pliki cookies
+          <h2 className="text-xl font-bold mb-2">Cookies Files
           </h2>
             <p className="text-lg leading-relaxed mb-4">
-            Strona wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania oraz prowadzenia danych statystycznych dotyczących m.in. liczby odwiedzin - Vercel Analytics (wyjaśnienie niżej).
+            The website uses cookies to ensure correct operation and to keep statistics on, among other things, the number of visits - Vercel Analytics (explained below).
             </p>
-          <h2 className="text-xl font-bold mb-2">Kiedy zbierane są Twoje dane?</h2>
+          <h2 className="text-xl font-bold mb-2">When is your data collected?</h2>
             <p className="text-lg leading-relaxed mb-4">
-            Twoje dane zbierane są podczas korzystania z formularza kontaktowego.
+            Your data is collected when you use the contact form.
             </p>
-          <h2 className="text-xl font-bold mb-2">Cele przetwarzania danych</h2>
+          <h2 className="text-xl font-bold mb-2">Purposes of data processing</h2>
           <p className="text-lg leading-relaxed mb-4">
-          Twoje dane zebrane przez formularz kontaktowy są używane jedynie w celach kontaktowych i nie są nikomu udostępniane.
+          Your data collected via the contact form is only used for contact purposes and is not shared with anyone.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-            Korzystanie z formularza kontaktowego jest dobrowolne.
+            The use of the contact form is voluntary.
             </p>
           <h2 className="text-xl font-bold mb-2">Vercel Analytics</h2>
             <p className="text-lg leading-relaxed mb-4">
-            Strona korzysta z usługi Vercel Analytics do zbierania i analizowania informacji o serwisie (ilość miesięcznych odwiedzin, skąd ruch trafia na stronę z wyszukiwarek, z linków w social media itp.). Informacje o osobach korzystających z serwisu są przesyłane do Vercel w celu analizy, ale firma nie przesyła informacji umożliwiających identyfikację danej osoby, takich jak adres IP.
+            The site uses Vercel Analytics to collect and analyse information about the site (number of monthly visits, where traffic comes to the site from search engines, social media links, etc.). Information about people using the site is sent to Vercel for analysis, but the company does not send personally identifiable information such as IP address.
             </p>
-          <h2 className="text-xl font-bold mb-2">Pozostałe informacje</h2>
+          <h2 className="text-xl font-bold mb-2">Other information</h2>
             <p className="text-lg leading-relaxed">
-          W razie jakichkolwiek pytań proszę o kontakt na{" "}
+            If you have any questions, please contact me at{" "}
           <a href="mailto:kontakt@szymonnawrocki.dev">kontakt@szymonnawrocki.dev</a>
             </p>
       </div>
