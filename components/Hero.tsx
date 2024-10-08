@@ -22,7 +22,7 @@ export default function Page() {
             Hi! My name is <span className='text-primary'>Szymon Nawrocki</span>.
           </h1>
           <p className="text-neutral-500 max-w-lg mx-auto md:mx-0 my-2 text-sm md:text-base text-center md:text-left">
-          I started my programming adventure in October 2022. I am a second year computer science student and my direction of development <span className='text-primary'>Full Stack Development</span>.
+          I started my programming adventure in October 2022. I am a second year computer science aspiring to become a <span className='text-primary'>Full Stack Developer</span>.
           </p>
         </div>
       </div>
