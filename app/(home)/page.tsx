@@ -7,8 +7,8 @@ export default function page() {
 	return (
 		<div className='min-h-screen py-8'>
 			<Hero/>
-			<SectionTitle>Technologie, których używam</SectionTitle>
-			<p className='text-center'>Kliknij aby dowiedzieć się więcej</p>
+			<SectionTitle>Technologies that I use</SectionTitle>
+			<p className='text-center'>Click for more information</p>
 			<Technologies/>
 		</div>
 	)

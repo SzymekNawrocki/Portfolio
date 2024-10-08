@@ -19,17 +19,17 @@ export default function Page() {
         </div>
         <div className="w-full md:w-1/2">
           <h1 className="text-xl md:text-4xl text-center md:text-left font-sans font-bold mb-4">
-            Cześć! Nazywam się <span className='text-primary'>Szymon Nawrocki</span>.
+            Hi! My name is <span className='text-primary'>Szymon Nawrocki</span>.
           </h1>
           <p className="text-neutral-500 max-w-lg mx-auto md:mx-0 my-2 text-sm md:text-base text-center md:text-left">
-            Swoją przygodę z programowaniem zacząłem w październiku 2022 roku. Jestem studentem drugiego roku informatyki a mój kierunek rozwoju <span className='text-primary'>Full Stack Development</span>.
+          I started my programming adventure in October 2022. I am a second year computer science student and my direction of development <span className='text-primary'>Full Stack Development</span>.
           </p>
         </div>
       </div>
       <div className='justify-center flex gap-11'>
       <Link href="/szymonnawrocki.cv.pdf" target='_blank' passHref>
         <HoverBorderGradient>
-          <span>Pobierz CV</span>
+          <span>Download CV</span>
         </HoverBorderGradient>
         </Link>
    </div>

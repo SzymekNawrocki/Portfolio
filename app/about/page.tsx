@@ -7,31 +7,31 @@ const Content = [
   {
     description: (
       <>
-        Swoją przygodę z programowaniem rozpocząłem od serii kursów tworzenia stron internetowych MMC School. Nauczyłem się wtedy języka HTML, CSS oraz JavaScript. Po roku samodzielnej nauki zapisałem się na niestacjonarne studia online na kierunku Informatyka. W dalszym etapie rozwoju zacząłem tworzyć swoje projekty głównie w technologii Next.js. Na dzień dzisiejszy pracuję nad rozwojem swoich aktualnych projektów oraz rozwijaniem kompetencji w kierunku tworzenia aplikacji mobilnych (React Native), natomiast na obecnym semestrze będę miał okazję uczyć się tworzenia backendu przy pomocy platformy .NET. 
+        I started my programming adventure with the MMC School series of web development courses. I then learned HTML, CSS and JavaScript. After a year of self-study, I enrolled in a part-time online degree programme in Computer Science. Further down the line, I started developing my projects mainly in Next.js technology. As of today, I am working on developing my current projects and developing my competences towards mobile application development (React Native), while this semester I will have the opportunity to learn how to create a backend using the .NET platform. 
       </>
     ),
-    badge: "Programowanie",
+    badge: "Programming",
     image:
       "https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png",
   },
   {
     description: (
       <>
-        Od początku szkoły średniej moim głównym zainteresowaniem są mieszane sztuki walki. Jestem fanem federacji UFC i sam chciałbym sprawdzić się jeszcze na zawodach, na poziomie amatorskim lub zawodowym. Widzę dużo podobieństw w nauce sztuk walki oraz programowania, a moim marzeniem jest połączenie tych dwóch dziedzin ze sobą w mojej codziennej rutynie.
+        Since the beginning of high school, my main interest has been mixed martial arts.I am a fan of the UFC federation and I myself would still like to test myself in competition, either at amateur or professional level.I see a lot of similarities in learning martial arts and programming, and my dream is to combine the two fields together in my daily routine.
       </>
     ),
-    badge: "Sztuki walki",
+    badge: "Martial Arts",
     image:
       "https://cdn.pixabay.com/photo/2023/07/06/21/35/bjj-8111391_960_720.jpg",
   },
   {
     description: (
       <>
-      Interesuję się rynkiem finansowym, ponieważ lubię śledzić dynamikę biznesu oraz globalną polityką, ponieważ uważam, że ważne jest rozumienie wydarzeń na świecie. W literaturze przyciągają mnie książki fantasy, historyczne oraz te, które oferują inspirujące perspektywy rozwoju osobistego - ostatnio zafascynowałem się Musashim Miyamoto.
-        Jestem również fanem sportu, zwłaszcza piłki nożnej. Gry komputerowe, które lubię najbardziej, to bijatyki, strzelanki oraz te z otwartymi światami, szczególnie te fantastyczne, gdzie mogę eksplorować nowe środowiska i podejmować nowe wyzwania.
+      I am interested in the financial market because I like to follow business dynamics and global politics because I think it is important to understand world events.In literature, I am attracted to fantasy, historical books and those that offer inspiring perspectives on personal development - I have recently become fascinated with Musashi Miyamoto.
+      I am also a sports fan, especially football. The computer games I enjoy most are brawlers, shooters and those with open worlds, especially fantasy ones where I can explore new environments and take on new challenges.
       </>
     ),
-    badge: "Pozostałe",
+    badge: "Other",
     image:
       "https://cdn.pixabay.com/photo/2017/01/13/08/08/tori-1976609_1280.jpg",
   },

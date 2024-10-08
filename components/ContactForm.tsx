@@ -18,16 +18,16 @@ interface Iform {
 
 const messages = {
   email: {
-    notAllowed: "Podanie tymczasowego adresu mailowego jest niedozwolone!",
+    notAllowed: "Provision of a temporary e-mail address is not permitted!",
   },
   subject: {
-    min: "Temat musi być dłuższy.",
+    min: "The topic must be longer.",
   },
   message: {
-    min: "Wiadomość jest za krótka.",
+    min: "The message is to short.",
   },
   privatePolicy: {
-    accept: "Zgoda jest wymagana.",
+    accept: "Consent is required.",
   },
 };
 
@@ -89,15 +89,15 @@ export function ContactForm() {
     if (emailResponse.status === 200) {
       form.reset();
       setAlertType("success");
-      setAlertTitle("Udało się!");
-      setAlertInfo("Wiadomość została wysłana.");
+      setAlertTitle("Succes!");
+      setAlertInfo("The message has been sent.");
       setTimeout(() => {
         setAlertVisible(false);
       }, 6500);
     } else {
       setAlertType("error");
-      setAlertTitle("Coś poszło nie tak!");
-      setAlertInfo("Nie udało się wysłać wiadomości. Spróbuj ponownie.");
+      setAlertTitle("Something went wrong!");
+      setAlertInfo("The message could not be sent. Please try again.");
       setTimeout(() => {
         setAlertVisible(false);
       }, 6500);
@@ -117,33 +117,36 @@ export function ContactForm() {
           <FormField
             type="email"
             id="email"
-            label="Adres mailowy"
+            label="E-mail Address"
             required={true}
           />
-          <FormField id="subject" label="Temat" required={true} />
+          <FormField 
+          id="subject" 
+          label="Topic" 
+          required={true} />
           <FormField
             type="textarea"
             id="message"
-            label="Wiadomość"
+            label="Message"
             required={true}
           />
           <FormField
             type="checkbox"
             id="privatePolicy"
-            label="Akceptuję politykę prywatności"
+            label="I accept the privacy policy"
             required={true}
           >
-            Akceptuję{" "}
+            I accept the{" "}
             <Link
               href="/polityka-prywatnosci"
               className="font-semibold text-primary hover:underline"
             >
-              politykę prywatności
+              privacy policy
             </Link>
             .
           </FormField>
           <Button wFull={true} disabled={alertType === "loading"}>
-            Wyślij wiadomość
+            Send Message
           </Button>
         </form>
       </FormProvider>

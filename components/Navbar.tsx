@@ -29,9 +29,9 @@ const Navbar = ({ className }: { className?: string }) => {
 
   const navItems = [
     { name: "Home", link: "/", icon: <IconHome className="h-7 w-7 text-black dark:text-white" /> },
-    { name: "O mnie", link: "/about", icon: <IconUser className="h-7 w-7 text-black dark:text-white" /> },
-    { name: "Projekty", link: "/projects", icon: <IconPackage className="h-7 w-7 text-black dark:text-white" /> },
-    { name: "Kontakt", link: "/contact", icon: <IconMessage className="h-7 w-7 text-black dark:text-white" /> },
+    { name: "About Me", link: "/about", icon: <IconUser className="h-7 w-7 text-black dark:text-white" /> },
+    { name: "Projects", link: "/projects", icon: <IconPackage className="h-7 w-7 text-black dark:text-white" /> },
+    { name: "Contact", link: "/contact", icon: <IconMessage className="h-7 w-7 text-black dark:text-white" /> },
   ];
 
   return (

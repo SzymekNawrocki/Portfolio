@@ -17,7 +17,7 @@ export default function ContactPage() {
         </div>
         <div className="border border-primary p-6 md:p-10 lg:p-14 rounded-xl w-full max-w-4xl">
           <p className="text-center mb-6 md:mb-10">
-            Masz pytanie? Skorzystaj z formularza kontaktowego lub&nbsp;napisz bezpośrednio na{" "}
+          Do you have a question? Job offer? Use the contact form or&nbsp;write directly to{" "}
             <a
               href="mailto:kontakt@szymonnawrocki.dev"
               className="font-semibold text-primary hover:underline"

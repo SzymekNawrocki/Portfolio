@@ -12,73 +12,73 @@ export default function Technologies() {
       icon: <SiNextdotjs className="text-black w-12 h-12" />,
       title: 'Next.js',
       description:
-        'Jestem najbardziej biegły w Next.js, który jest moim głównym narzędziem do budowy aplikacji z renderowaniem po stronie serwera oraz statycznych stron zoptymalizowanych pod kątem SEO.',
+        'I am most proficient in Next.js, which is my main tool for building applications with server-side rendering and static SEO-optimised pages.'
     },
     React: {
       icon: <FaReact className="text-blue-500 w-12 h-12" />,
       title: 'React',
       description:
-        'Mam solidną wiedzę na temat Reacta, którą ciągle rozwijam. To moja ulubiona biblioteka do budowy interfejsów użytkownika. Co więcej, intensywnie pracuję nad React Native. W przyszłych projektach zamierzam dalej rozwijać swoje umiejętności w React, wykorzystując go zarówno do aplikacji webowych, jak i mobilnych',
+        'I have a solid knowledge of React, which I am constantly developing. It is my favourite library for building user interfaces. Furthermore, I am working intensively on React Native. In future projects, I intend to further develop my skills in React, using it for both web and mobile applications',
     },
     CMS: {
       icon: <SiContentful className="text-green-600 w-12 h-12" />,
       title: 'CMS',
       description:
-        'Mam doświadczenie w pracy z nowoczesnymi headless CMS-ami, takimi jak DatoCMS i Hygraph (dawniej GraphCMS).Te narzędzia umożliwiają łatwą integrację z aplikacjami webowymi, co przyspiesza wdrożenia dynamicznych stron. Aktualnie jestem w trakcie zgłębiania WordPressa.',
+        'I have experience of working with modern headless CMSs such as Wordpress, DatoCMS and Hygraph (formerly GraphCMS).These tools allow easy integration with web applications to speed up the implementation of dynamic sites.',
     },
     TailwindCSS: {
       icon: <SiTailwindcss className="text-blue-400 w-12 h-12" />,
       title: 'Tailwind CSS',
       description:
-        'Tailwind CSS jest moim ulubionym narzędziem do szybkiego tworzenia interfejsów użytkownika i wydajnych, responsywnych stron internetowych.',
+        'Tailwind CSS is my favourite tool for quickly creating user interfaces and efficient, responsive websites.',
     },
     GitHub: {
       icon: <FaGithub className="text-gray-800 w-12 h-12" />,
       title: 'GitHub',
       description:
-        'GitHub jest moim głównym narzędziem do kontroli wersji oraz współpracy przy projektach.',
+        'GitHub is my main tool for version control and project collaboration.',
     },
     AI: {
       icon: <AiOutlineRobot className="text-blue-400 w-12 h-12" />,
       title: 'AI',
       description:
-        'Przy swoich projektach często korzystam z Chat GPT oraz generetora zdjęć Canva.',
+        'For my projects, I often use Chat GPT and the Canva image generator.',
     },
     JavaScript: {
       icon: <FaJsSquare className="text-yellow-500 w-12 h-12" />,
       title: 'JavaScript',
       description:
-        'JavaScript to język, którego opanowanie jest kluczowe dla każdego dewelopera. Ukończyłem dwa kursy z JavaScriptu i wykorzystałem go w serii czterech kursów dotyczących tworzenia stron internetowych, dzięki czemu dobrze rozumiem podstawy tego języka i jestem gotów do dalszej nauki oraz pracy z nim.',
+        'JavaScript is a language that is crucial for any developer to master. Having completed two courses in JavaScript and used it in a series of four courses on web development, I have a good understanding of the basics of the language and am ready to continue learning and working with it.',
     },
     CSS: {
       icon: <SiCss3 className="text-blue-500 w-12 h-12" />,
       title: 'CSS',
       description:
-        'Mam solidne umiejętności w CSS, pozwalające mi na tworzenie czystych, responsywnych i estetycznych interfejsów użytkownika. Znam techniki, takie jak Flexbox i CSS Grid. Staram się też dbać o optymalizację pod kątem wydajności i dostępności.',
+        'I have solid skills in CSS, allowing me to create clean, responsive and aesthetically pleasing user interfaces.I am familiar with techniques such as Flexbox and CSS Grid. I also strive to ensure optimisation for performance and accessibility.',
     },
     HTML: {
       icon: <SiHtml5 className="text-orange-500 w-12 h-12" />,
       title: 'HTML',
       description:
-        'HTML to fundament każdej aplikacji webowej. Wykorzystuję go do tworzenia strukturalnych i semantycznych treści, z myślą o dostępności i wydajności. Zwracam uwagę na użycie odpowiednich znaczników oraz optymalizację dla SEO.',
+        'HTML is the foundation of any web application.I use it to create structured and semantic content, with accessibility and performance in mind.I pay attention to the use of appropriate markup and optimisation for SEO.',
     },
     Sass: {
       icon: <SiSass className="text-pink-400 w-12 h-12" />,
       title: 'SaSS',
       description:
-        'Korzystam z Sass, aby pisać bardziej zorganizowany i modułowy CSS. W mojej pracy stosuję metodologię BEM (Block Element Modifier). Dzięki Sass i BEM mogę efektywnie organizować kod.',
+        'I use Sass to write more structured and modular CSS.I use the BEM (Block Element Modifier) methodology in my work.Thanks to Sass and BEM, I can organise my code efficiently.',
     },
     DotNet: {
       icon: <SiDotnet className="text-purple-500 w-12 h-12" />,
       title: '.NET',
       description:
-        'Jestem w trakcie przechodzenia roadmapy stworzonej przez programistę .NET Jakuba Kozerę. Moim celem jest zostanie Full Stack Developerem React x .NET',
+        'I am in the process of going through a roadmap created by .NET developer Jakub Kozera. My goal is to become a Full Stack Developer of React x .NET',
     },
     Redux: {
       icon: <SiRedux className="text-violet-500 w-12 h-12" />,
       title: 'Redux',
       description:
-        'Jestem zaznajomiony z biblioteką Redux, która ułatwia zarządzanie stanem aplikacji w bardziej złożonych projektach React.',
+        'I am familiar with the Redux library, which makes it easier to manage application state in more complex React projects.',
     },
   };
 
