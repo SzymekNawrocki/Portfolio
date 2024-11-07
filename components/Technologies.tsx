@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaReact, FaJsSquare, FaBrain, FaGithub } from 'react-icons/fa';
-import { SiCss3, SiHtml5, SiSass, SiDotnet, SiNextdotjs, SiTailwindcss, SiContentful, SiRedux } from 'react-icons/si';
+import { SiCss3, SiHtml5, SiSass, SiNodedotjs, SiNextdotjs, SiTailwindcss, SiContentful, SiRedux } from 'react-icons/si';
 import TechDetail from './TechDetail';
 import { AiOutlineRobot } from 'react-icons/ai';
 
@@ -42,7 +42,7 @@ export default function Technologies() {
       icon: <AiOutlineRobot className="text-blue-400 w-12 h-12" />,
       title: 'AI',
       description:
-        'For my projects, I often use Chat GPT and the Canva image generator.',
+        'For my projects, I use Chat GPT, GitHub Copilot and Canva',
     },
     JavaScript: {
       icon: <FaJsSquare className="text-yellow-500 w-12 h-12" />,
@@ -68,12 +68,13 @@ export default function Technologies() {
       description:
         'I use Sass to write more structured and modular CSS.I use the BEM (Block Element Modifier) methodology in my work.Thanks to Sass and BEM, I can organise my code efficiently.',
     },
-    DotNet: {
-      icon: <SiDotnet className="text-purple-500 w-12 h-12" />,
-      title: '.NET',
+    NodeJS: {
+      icon: <SiNodedotjs className="text-green-500 w-12 h-12" />,
+      title: 'Node.js',
       description:
-        'I am in the process of going through a roadmap created by .NET developer Jakub Kozera. My goal is to become a Full Stack Developer of React x .NET',
+        'I am developing my skills in Node.js, with a focus on the NestJS framework. My goal is to become a Full Stack Developer specializing in Next.js & React Native | NestJS.',
     },
+
     Redux: {
       icon: <SiRedux className="text-violet-500 w-12 h-12" />,
       title: 'Redux',
