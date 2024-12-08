@@ -40,7 +40,7 @@ const Content = [
 export default function Page() {
   return (
     <div className="max-w-2xl mx-auto pt-8 mt-8 mb-12">
-  <PageTitle>O mnie</PageTitle>
+  <PageTitle>About Me</PageTitle>
   {Content.map((item, index) => (
     <div
       key={`content-${index}`}

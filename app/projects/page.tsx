@@ -33,7 +33,7 @@ export default async function ProjectsModelsPage() {
 
   return (
     <div className="container mx-auto py-11 mt-11">
-  <PageTitle> Projekty </PageTitle>
+  <PageTitle>Projects</PageTitle>
   <div className="space-y-20">
     {allProjectsModels.map((project, index) => (
       <div key={index} className="p-8 border-border rounded-lg bg-secondary">

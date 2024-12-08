@@ -13,7 +13,7 @@ export default function ContactPage() {
     <div className="px-4 py-8 md:px-8 lg:px-16 xl:px-24">
       <div className="flex flex-col items-center mt-10">
         <div className="mb-10 lg:mb-14">
-          <PageTitle>Kontakt</PageTitle>
+          <PageTitle>Contact</PageTitle>
         </div>
         <div className="border border-primary p-6 md:p-10 lg:p-14 rounded-xl w-full max-w-4xl">
           <p className="text-center mb-6 md:mb-10">
